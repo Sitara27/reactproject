@@ -1,0 +1,152 @@
+.contactContainer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.contactclr {
+    width: 45%;
+    background: linear-gradient(135deg, #45b1a6 0%, #3d9d94 100%);
+    padding: 2rem;
+    box-shadow: 1px 1px 2px grey;
+}
+
+.contactclr>form>h2 {
+    font-size: 1.4rem;
+    color: white;
+}
+
+.contactclr form input[type="text"],
+.contactclr form input[type="email"],
+.contactclr form textarea {
+    width: 100%;
+    /* margin-bottom: 10px;  */
+    padding: 0.8rem 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(221, 210, 210);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contactclr form input::placeholder {
+    color:white;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+textarea>::placeholder{
+    /* padding-top: 3rem; */
+    color: white;
+}
+::selection{
+    background:pink;
+    color: black;
+}
+
+.contactclr>form>button {
+    width: 100%;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.3rem;
+    background: #2d7c74;
+    color: white;
+    border-radius: 10px;
+    text-transform: capitalize;
+    letter-spacing:5px;
+}
+
+.contactclr>form>button:hover {
+    background: linear-gradient(135deg, #276b64 0%, #29968b 100%);
+}
+
+.contactDetails {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 2px grey;
+    padding: 2rem;
+}
+
+.contactDetails>h2 {
+    font-size: 1.4rem;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 700;
+ color: #3d9d94;
+}
+
+/* .contactDetails>h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background:#8a3eff;
+} */
+
+
+.contactDetails>p {
+    font-size: 0.9rem;
+}
+
+
+.contactIcon {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont1 {
+    display: flex;
+}
+
+.cont1>p {
+    font-size: 0.8rem;
+    margin-right: 2.3rem;
+}
+
+.cont1>p>strong {
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width:850px) {
+    .contactContainer {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .contactclr {
+        width: 100%;
+
+    }
+
+    .contactDetails {
+        width: 100%;
+    }
+    .cont1>p {
+        font-size: 1.2rem;
+    }
+    
+    .cont1>p>strong {
+        font-size: 1.3rem;
+    }
+    .contactDetails>h2 {
+        font-size: 1.6rem;
+    }
+    .contactDetails>p {
+        font-size:1rem;
+    }
+    .contactclr>form>h2 {
+        font-size: 1.6rem;
+    }
+    
+}

@@ -1,0 +1,165 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-section>h1 {
+    width: 40%;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.card-section>small {
+    color: #3d9d94;
+    font-size: 1rem;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cardGallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.cardBox {
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 1rem;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.cardBox:hover {
+    transform: scale(1.05);
+}
+
+.cardBox>img {
+    width: 100%;
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+.cardbtn {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardbtn>p {
+    border: 1px solid #6955f5;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .2rem;
+    text-transform: capitalize;
+    color: white;
+    background:#6955f5;
+    border-radius: 5px;
+}
+
+.cardbtn>#p {
+    background: #d5bde9;
+    border: none;
+    color: #6955f5
+}
+
+.cardBox>h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.cardChapter {
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardChapter>p {
+    color: #6955f5;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+.cardPrice {
+    border-top: 1px solid #bd74f9;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.cardPrice>p {
+    margin: 1px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #d67130;
+}
+
+/* #COST {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.cardPrice >img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+} */
+
+
+/* button */
+
+.searchBtn{
+    border: 1px solid black;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding:5px;
+}
+.searchBtn>input{
+    border: none;
+    outline: none;
+}
+@media screen and (max-width:1000px) {
+    .card-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card-section>h1 {
+        width: 100%;
+    }
+
+    .cardGallery {
+        flex-wrap: wrap;
+    }
+
+    .cardBox {
+        margin-bottom: 10px;
+    }
+    .searchBtn{
+        width: 100%;
+    }
+}

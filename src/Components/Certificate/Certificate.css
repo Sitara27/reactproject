@@ -1,0 +1,67 @@
+#certificate{
+    background:  #6955f5;
+    padding:0 4rem;
+    padding-right: 0;
+    color: white;
+}
+.certificate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.stick{
+    width: 10px;
+    height: 90px;
+    background: #d67130;
+    position: absolute;
+    left: -1%;
+    top: 0;
+   transform: rotate(60deg);
+}
+.leftContent{
+    width: 50%;
+}
+.leftContent>small{
+   margin-left: 15rem;
+   font-size: 2rem;
+   font-style:italic;
+   color: #d67130;
+}
+.rightContent{
+    width: 50%;
+    background:  #624de9;
+    border-top-left-radius: 80%;
+    overflow: visible;
+}
+.rightContent>img{
+    width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+    .certificate{
+       flex-direction: column;
+       padding: 1rem 0;
+    }
+    .leftContent{
+        width: 100%;
+    }
+    .rightContent{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .leftContent>small{
+        margin-left: 0;
+     }
+     .stick{
+        width: 10px;
+        height: 90px;
+        background: #d67130;
+        position: absolute;
+        left: -10%;
+        top: 0;
+        transform: rotate(60deg);
+    }
+}

@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#foot {
+    /* background-color: #21262c;  */
+    background: linear-gradient(to top,#000000, rgba(6, 14, 20, 0.6)),  url('../../assets/footer.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+}

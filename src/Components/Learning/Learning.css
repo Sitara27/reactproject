@@ -1,0 +1,85 @@
+.learningSection {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 2rem;
+}
+
+.learnImg {
+    width: 50%;
+}
+
+.learnImg>img {
+    width: 100%;
+    filter: drop-shadow(1px 1px 20px #e9627c);
+}
+
+.learnContent {
+    width: 50%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+
+}
+
+.learnContent>h1 {
+    font-size: 2.5rem;
+}
+
+.learnContent>p {
+    width: 75%;
+    font-size: .9rem;
+}
+
+.CardContainer {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 3rem;
+
+}
+
+.toolCart {
+   background: rgb(236, 232, 232);
+    box-shadow: 1px 1px 1px grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    border-radius:50% 10% 50% 10% / 10% 50% 10% 50%;
+}
+.toolCart>p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.toolCart>img {
+    width: 100%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:1050px) {
+    .learningSection {
+        flex-direction: column;
+        margin: 0rem;
+    }
+    .learnImg {
+        width: 100%;
+    }
+    .learnContent {
+        width: 100%;
+        padding-top: 2rem;
+        margin: 1rem;
+    
+    }
+}
+
+@media screen and (max-width:500px) {
+    .CardContainer {
+       flex-direction: column;
+       align-items: flex-start;
+    }
+}
+
